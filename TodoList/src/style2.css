@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #212121;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 20px; /* Increased padding for smaller screens */
+}
+
+.todo {
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 540px;
+    background: #fff;
+    margin: 50px auto; /* Reduced top margin for smaller screens */
+    padding: 20px; /* Reduced padding for smaller screens */
+    border-radius: 10px;
+}
+
+.todo h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Reduced margin for smaller screens */
+    font-size: 1.5rem; /* Responsive font size */
+}
+
+.todo h2 img {
+    width: 25px; /* Adjusted icon size */
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 10px; /* Reduced padding for smaller screens */
+    margin-bottom: 20px; /* Reduced margin for smaller screens */
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 8px; /* Reduced padding for smaller screens */
+    font-size: 1rem; /* Responsive font size */
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 12px 30px; /* Adjusted button padding */
+    background: #ff5945;
+    color: #fff;
+    font-size: 14px; /* Adjusted font size */
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 16px; /* Adjusted font size */
+    padding: 10px 8px 10px 40px; /* Adjusted padding */
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px; /* Adjusted size */
+    width: 20px; /* Adjusted size */
+    border-radius: 50%;
+    background-image: url(../images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px; /* Adjusted position */
+    left: 5px; /* Adjusted position */
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(../images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px; /* Adjusted size */
+    height: 30px; /* Adjusted size */
+    font-size: 18px; /* Adjusted font size */
+    color: #555;
+    line-height: 30px; /* Adjusted line height */
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+/* Media Queries for smaller screens */
+@media only screen and (max-width: 600px) {
+    .todo {
+        width: 95%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .todo h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .row {
+        padding-left: 5px;
+    }
+
+    input {
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding: 8px 8px 8px 35px;
+    }
+
+    ul li::before {
+        height: 18px;
+        width: 18px;
+        top: 7px;
+        left: 5px;
+    }
+
+    ul li span {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}

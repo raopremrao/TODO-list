@@ -109,19 +109,54 @@ body {
 
 
 #About {
-    height: 150vh;
+    position: relative;
+    height: 100vh;
     width: 100vw;
-    padding: 10vw 0;
-
-
+    /* padding: 10vw 0; */
     background-color: #111;
 
 }
 
 
 #Features {
+    position: relative;
     width: 100vw;
     height: 100vh;
 
     background-color: #fff;
 }
+
+#get-started {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.getStarted {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 20%;
+}
+
+.get-started-btn {
+    font-size: 2rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.get-started-btn a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 10px;
+}
+
