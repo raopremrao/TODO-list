@@ -73,4 +73,6 @@ gsap.from("#Home .word7", {
 
 
 
+
+
 })
