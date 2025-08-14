@@ -107,18 +107,14 @@ body {
     user-select: none;
 }
 
-/* section #aboutA {
-    position: relative;
-    width: 100vw;
-    overflow: hidden;
-} */
+
 
 #About {
     position: relative;
     height: 130vh;
     width: 100vw;
     /* padding: 10vw 0; */
-    background-color: #111;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,16 +123,23 @@ body {
 
 #About h1 {
     font-family: monospace;
-    font-size: 4rem;
+    font-size: 5vw;
 }
 
-
 #aboutA {
-    /* border: #fff solid 2px; */
+    background-color: #c4e6f4;
+    position: relative;
+    width: 100vw;
+    height: 140svh;
+    overflow: hidden;
+}
+
+/* .about_01, .about_02, .about_03 {
+    border: #fff solid 2px;
     position: relative;
     width: 100vw;
     height: 150svh;
-}
+} */
 
 .about_image {
     position: absolute;
@@ -144,6 +147,7 @@ body {
     height: 100%;
     clip-path: polygon(25% 25%, 75% 40%, 100% 100%, 0% 100%);
     will-change: clip-path;
+
 }
 
 .about_image img {
@@ -154,9 +158,9 @@ body {
 
 .about_name {
     position: absolute;
-    /* top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     display: flex;
@@ -168,7 +172,7 @@ body {
 .about_name h1 {
     color: #fff;
     font-family: monospace;
-    font-size: 3.5rem;
+    font-size: 5vw;
     text-transform: uppercase;
     line-height: 1;
 }
