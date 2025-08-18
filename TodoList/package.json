@@ -17,7 +17,7 @@
     "three": "^0.179.1"
   },
 
-  "rewrites": [
-    { "source": "/index2.html", "destination": "/" }
-  ]
+  "rewrites": {
+    "source": "/index2.html", "destination": "/" 
+  }
 }
